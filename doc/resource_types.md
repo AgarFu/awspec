@@ -2198,6 +2198,7 @@ describe subnet('my-subnet') do
 end
 ```
 
+
 ### be_associated_to
 
 ### be_available, be_pending
