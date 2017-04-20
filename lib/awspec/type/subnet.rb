@@ -11,6 +11,10 @@ module Awspec::Type
       @id ||= resource_via_client.subnet_id if resource_via_client
     end
 
+    def associated_to? route_table_id
+      !find_route_table(route_table_id).nil?
+    end
+
     STATES = %w(
       available pending
     )
